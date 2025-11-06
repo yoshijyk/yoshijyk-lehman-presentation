@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lehman Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="presentation">
+        <!-- Slide 1: Title Slide -->
+        <div class="slide active" id="slide1">
+            <h1>Lehman Presentation</h1>
+            <p class="subtitle">A Simple Presentation</p>
+            <p class="author">yoshijyk</p>
+        </div>
+
+        <!-- Slide 2: Introduction -->
+        <div class="slide" id="slide2">
+            <h2>Introduction</h2>
+            <ul>
+                <li>Welcome to this presentation</li>
+                <li>Navigate using arrow keys or buttons below</li>
+                <li>Press 'F' for fullscreen</li>
+            </ul>
+        </div>
+
+        <!-- Slide 3: Content -->
+        <div class="slide" id="slide3">
+            <h2>Main Content</h2>
+            <p>Add your content here</p>
+            <ul>
+                <li>Point 1</li>
+                <li>Point 2</li>
+                <li>Point 3</li>
+            </ul>
+        </div>
+
+        <!-- Slide 4: Conclusion -->
+        <div class="slide" id="slide4">
+            <h2>Conclusion</h2>
+            <p>Thank you for your attention!</p>
+            <p class="contact">Questions?</p>
+        </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="controls">
+        <button id="prevBtn" onclick="prevSlide()">← Previous</button>
+        <span id="slideNumber">1 / 4</span>
+        <button id="nextBtn" onclick="nextSlide()">Next →</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
