@@ -7,11 +7,12 @@ function showSlide(n) {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
 
-    // Wrap around if needed
-    if (n > totalSlides) {
+    // Clamp to valid range
+    currentSlide = n;
+    if (currentSlide > totalSlides) {
         currentSlide = totalSlides;
     }
-    if (n < 1) {
+    if (currentSlide < 1) {
         currentSlide = 1;
     }
 
