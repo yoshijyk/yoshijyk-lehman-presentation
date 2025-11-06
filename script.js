@@ -33,17 +33,11 @@ function showSlide(n) {
 }
 
 function nextSlide() {
-    if (currentSlide < totalSlides) {
-        currentSlide++;
-        showSlide(currentSlide);
-    }
+    showSlide(currentSlide + 1);
 }
 
 function prevSlide() {
-    if (currentSlide > 1) {
-        currentSlide--;
-        showSlide(currentSlide);
-    }
+    showSlide(currentSlide - 1);
 }
 
 // Keyboard navigation
@@ -56,12 +50,10 @@ document.addEventListener('keydown', (e) => {
         prevSlide();
     } else if (e.key === 'Home') {
         e.preventDefault();
-        currentSlide = 1;
-        showSlide(currentSlide);
+        showSlide(1);
     } else if (e.key === 'End') {
         e.preventDefault();
-        currentSlide = totalSlides;
-        showSlide(currentSlide);
+        showSlide(totalSlides);
     } else if (e.key === 'f' || e.key === 'F') {
         e.preventDefault();
         toggleFullscreen();
